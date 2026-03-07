@@ -2,99 +2,20 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>想翔旅遊 全台最大日本自由行</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/choose_one.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f094;
-        }
-        .news-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            max-width: 1280px;
-            margin: 20px auto;
-        }
-        .news-card {
-            display: block;
-            width: 280px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            cursor: pointer;
-            position: relative;
-        }
-        .news-card:hover {
-            transform: translateY(-5px);
-            background-color: #f9f9f9;
-        }
-        .news-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .news-card h3, .news-card p {
-            padding: 10px;
-            text-align: center;
-        }
-        .card-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px;
-            gap: 5px;
-        }
-        .btn {
-            background-color: #ff9900;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            flex: 1;
-            min-width: 80px;
-            cursor: pointer;
-            position: relative;
-            z-index: 10;
-        }
-        .btn:hover {
-            background-color: #e68a00;
-        }
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #f8f8f8;
-            border-top: 1px solid #eee;
-        }
-        .date {
-            font-size: 12px;
-            color: #666;
-        }
-        .price {
-            font-size: 16px;
-            font-weight: bold;
-            color: #ff0000;
-        }
-    </style>
 <body>
     <div id="header-container"></div>
+
     <div class="news-container">
         <div class="news-card" data-href="關東伊豆深度旅遊.html">
-            <img src="main_C_TO.jpg" alt="觀光景點">
+            <img src="images/main_C_TO.jpg" alt="觀光景點">
             <h3>深度關東:夢見伊豆X聖地巡禮</h3>
             <p>持之以恆四個字的偉大在這趟旅行得到了驗證，途中的每分每秒是一次挑戰，唯有堅持到底，才能發現隱藏在山中、雪中、夜色中那令人忘返的美景</p>
             <div class="card-buttons">
@@ -107,8 +28,9 @@
                 <span class="price">TWD 36,675 起</span>
             </div>
         </div>
+
         <div class="news-card" data-href="橫跨東瀛_夢見伊豆X聖地巡禮.html">
-            <img src="main.jpg" alt="觀光景點">
+            <img src="images/main.jpg" alt="觀光景點">
             <h3>橫跨東瀛:夢見伊豆X聖地巡禮</h3>
             <p>持之以恆四個字的偉大在這趟旅行得到了驗證，途中的每分每秒是一次挑戰，唯有堅持到底，才能發現隱藏在山中、雪中、夜色中那令人忘返的美景</p>
             <div class="card-buttons">
@@ -122,8 +44,8 @@
             </div>
         </div>
 
-                <div class="news-card" data-href="踏入關西_大啖近畿.html">
-            <img src="main_3.jpg" alt="觀光景點">
+        <div class="news-card" data-href="踏入關西_大啖近畿.html">
+            <img src="images/main_3.jpg" alt="觀光景點">
             <h3>踏入關西X大啖近畿</h3>
             <p>持之以恆四個字的偉大在這趟旅行得到了驗證，途中的每分每秒是一次挑戰，唯有堅持到底，才能發現隱藏在山中、雪中、夜色中那令人忘返的美景</p>
             <div class="card-buttons">
@@ -137,8 +59,8 @@
             </div>
         </div>
 
-                <div class="news-card" data-href="深度四國_聖地巡禮.html">
-            <img src="main_C_FC.jpg" alt="觀光景點">
+        <div class="news-card" data-href="深度四國_聖地巡禮.html">
+            <img src="images/main_C_FC.jpg" alt="觀光景點">
             <h3>深度四國X聖地巡禮</h3>
             <p>持之以恆四個字的偉大在這趟旅行得到了驗證，途中的每分每秒是一次挑戰，唯有堅持到底，才能發現隱藏在山中、雪中、夜色中那令人忘返的美景</p>
             <div class="card-buttons">
@@ -151,31 +73,11 @@
                 <span class="price">TWD 36,141 起</span>
             </div>
         </div>
-        
     </div>
+
     <div id="footer-container"></div>
-    <script>
-        document.querySelectorAll('.news-card').forEach(card => {
-            card.addEventListener('click', function(event) {
-                if (!event.target.classList.contains('btn')) {
-                    window.location.href = card.getAttribute('data-href');
-                }
-            });
-        });
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("header.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header-container").innerHTML = data;
-                })
-                .catch(error => console.error("無法加載 header.html:", error));
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("footer-container").innerHTML = data;
-                })
-                .catch(error => console.error("無法加載 footer.html:", error));
-        });
-    </script>
+
+    <script src="js/layout.js"></script>
+    <script src="js/choose_one.js"></script>
 </body>
 </html>
