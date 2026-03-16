@@ -12,7 +12,7 @@ import {
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAFfSE-jujXp_gs-Exy8ZscUd75KLLTnUI",
+  apiKey: "AIzaSyAPXne-3E02y0x5R384yXeOkOc8_TdCmKE",
   authDomain: "trip0-682b0.firebaseapp.com",
   projectId: "trip0-682b0",
   storageBucket: "trip0-682b0.appspot.com",
